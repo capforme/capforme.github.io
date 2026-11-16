@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
+<title>Soutien · Cap Forme</title>
+<meta name="description" content="Soutien de l'app Cap Forme : nous joindre, sauvegarder ou effacer tes données, changer de téléphone et numéros d'aide.">
+<link rel="icon" href="data:,">
+<style>
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff;
+  --fg: #16181b;
+  --muted: #555b62;
+  --line: #e2e5e9;
+  --card: #f3f5f0;
+  --accent: #2c6500;
+  --accent-strong: #1f4a00;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b0d10;
+    --fg: #e9ebee;
+    --muted: #a9afb6;
+    --line: #262a31;
+    --card: #14181c;
+    --accent: #c5f23a;
+    --accent-strong: #dcf88a;
+  }
+}
+*, *::before, *::after { box-sizing: border-box; }
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 106.25%;
+  line-height: 1.55;
+}
+@supports (font: -apple-system-body) {
+  html { font: -apple-system-body; line-height: 1.55; }
+}
+body { margin: 0; background: var(--bg); color: var(--fg); overflow-wrap: break-word; }
+.wrap {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 1.25rem max(1rem, env(safe-area-inset-right)) 3rem max(1rem, env(safe-area-inset-left));
+}
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--line);
+}
+.brand { font-weight: 700; font-size: 1.1rem; color: var(--fg); text-decoration: none; }
+.site-nav a { margin-right: 1rem; }
+.site-nav a:last-child { margin-right: 0; }
+.site-nav .current { color: var(--fg); text-decoration: none; font-weight: 600; }
+h1 { font-size: 1.75rem; line-height: 1.2; margin: 1.5rem 0 0.25rem; }
+h2 { font-size: 1.3rem; line-height: 1.25; margin: 2.25rem 0 0.5rem; }
+h3 { font-size: 1.05rem; line-height: 1.3; margin: 1.5rem 0 0.25rem; }
+main, section, h2, h3 { scroll-margin-top: 1rem; }
+p, ul, ol { margin: 0.6rem 0; }
+ul, ol { padding-left: 1.25rem; }
+li { margin: 0.35rem 0; }
+a { color: var(--accent); text-underline-offset: 0.15em; }
+a:hover { color: var(--accent-strong); }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+.meta { color: var(--muted); margin-top: 0; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 0.75rem 1rem; margin: 1rem 0; }
+.card p:first-child, .card h2:first-child { margin-top: 0; }
+.urgent { border-left: 4px solid var(--accent); }
+.help li { margin: 0.6rem 0; }
+.site-footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.95rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="site-header">
+  <a class="brand" href="soutien.html">Cap Forme</a>
+  <nav class="site-nav" aria-label="Pages du site">
+    <a href="confidentialite.html">Confidentialité</a>
+    <a href="soutien.html" aria-current="page" class="current">Soutien</a>
+  </nav>
+</header>
+
+<main id="soutien">
+<h1>Soutien</h1>
+<p class="meta">Cap Forme, une app d'entraînement et de nutrition faite au Québec.</p>
+
+<section id="l-app">
+<h2>Cap Forme en bref</h2>
+<p>Cap Forme t'aide à noter ce que tu manges, à suivre tes séances au gym, à préparer ton épicerie et à voir tes progrès (poids, mesures, photos). Pas de compte à créer&nbsp;: ce que tu notes est gardé sur ton téléphone.</p>
+</section>
+
+<section id="nous-joindre" class="card">
+<h2>Nous joindre</h2>
+<p>Écris-nous à <a href="mailto:ludo5678x@gmail.com">ludo5678x@gmail.com</a>. Dans l'app&nbsp;: Réglages&nbsp;› À propos&nbsp;› Nous joindre.</p>
+<p>On lit chaque courriel et on répond en général en 24 à 48&nbsp;h. Pour une demande sur tes renseignements personnels (copie, correction, effacement, plainte), on te répond par écrit au plus tard dans les 30&nbsp;jours.</p>
+<p>Dis-nous ce que tu faisais, ton modèle d'iPhone et la version de l'app (Réglages&nbsp;› À propos). N'envoie pas ta sauvegarde ni de détails de santé dont on n'a pas besoin.</p>
+</section>
+
+<section id="questions">
+<h2>Questions fréquentes</h2>
+
+<h3 id="reglages">Où sont les réglages de l'app?</h3>
+<p>Touche la roue dentée en haut de l'écran Aujourd'hui. C'est là que tu trouves Mes données, Profil, Rappels, Aide et ressources et À propos.</p>
+
+<h3 id="mes-donnees">Où sont mes données?</h3>
+<p>Sur ton téléphone, dans l'app. Il n'y a ni compte ni serveur Cap Forme&nbsp;: on ne voit pas tes données et on ne peut pas les récupérer pour toi. Fais une sauvegarde de temps en temps. Quand tu scannes un code-barres ou lances une recherche en ligne, ce code ou ces mots partent vers Open Food Facts, pour trouver le produit. Open Food Facts voit aussi l'adresse IP de ton téléphone. Les détails sont dans la <a href="confidentialite.html#confidentialite">politique de confidentialité</a>.</p>
+
+<h3 id="sauvegarde">Comment faire une sauvegarde (ou une copie de mes données)?</h3>
+<ol>
+  <li>Réglages&nbsp;› Mes données&nbsp;› Faire une sauvegarde.</li>
+  <li>Choisis où enregistrer le fichier. Garde-le dans un endroit sûr, hors de ce téléphone (un ordinateur, un nuage, ou envoie-le-toi)&nbsp;: dans Fichiers, «&nbsp;Sur mon iPhone&nbsp;» reste dans le téléphone.</li>
+</ol>
+<p>Le fichier est en JSON, un format ouvert. Il n'est pas chiffré&nbsp;: une personne qui l'ouvre peut le lire. Pour un adulte, tes photos de progrès y sont incluses par défaut, en plus petit. Pour les retirer, désactive «&nbsp;Inclure mes photos de progrès&nbsp;». Tes réponses à «&nbsp;Ta santé&nbsp;» ne sont jamais dans la sauvegarde. Tes bilans, ton équipement et ton budget d'épicerie n'y sont pas non plus.</p>
+
+<h3 id="changer-de-telephone">Comment changer de téléphone?</h3>
+<ol>
+  <li>Sur l'ancien téléphone&nbsp;: Réglages&nbsp;› Mes données&nbsp;› Faire une sauvegarde. Avec tes photos de progrès, touche «&nbsp;Faire la sauvegarde complète&nbsp;».</li>
+  <li>Garde le fichier dans un endroit sûr, hors de ce téléphone (un ordinateur, un nuage, ou envoie-le-toi)&nbsp;: dans Fichiers, «&nbsp;Sur mon iPhone&nbsp;» reste dans le téléphone.</li>
+  <li>Sur le nouveau téléphone, installe Cap Forme, ouvre-la et touche «&nbsp;Restaurer une sauvegarde&nbsp;», sous «&nbsp;Commencer&nbsp;».</li>
+  <li>Réponds de nouveau à «&nbsp;Ta santé&nbsp;» (Réglages&nbsp;› Profil)&nbsp;: ces réponses ne sont jamais dans la sauvegarde.</li>
+  <li>Refais Mon équipement (Gym) et ton budget d'épicerie&nbsp;: ils ne sont pas dans la sauvegarde.</li>
+  <li>Accepte les notifications&nbsp;: tes rappels reviennent.</li>
+  <li>Sur l'ancien téléphone, coupe les notifications de l'app. Sinon, tes rappels sonnent en double.</li>
+</ol>
+
+<h3 id="effacer">Comment tout effacer?</h3>
+<p>Réglages&nbsp;› Mes données&nbsp;› Effacer toutes mes données. C'est définitif&nbsp;: fais d'abord une sauvegarde si tu veux garder quelque chose. Seuls des réglages de ton téléphone restent (thème, sons et vibrations…). Pour tout retirer, supprime l'app. Une sauvegarde que tu as enregistrée ailleurs reste où elle est&nbsp;: efface-la toi-même au besoin.</p>
+
+<h3 id="code-barres">Un code-barres est introuvable ou ses valeurs semblent fausses?</h3>
+<p>Les produits viennent d'Open Food Facts, une base ouverte et collaborative&nbsp;: certains produits n'y sont pas, et les valeurs peuvent contenir des erreurs. Vérifie l'étiquette. Tu peux aussi entrer l'aliment à la main. La recherche d'un produit demande une connexion Internet.</p>
+
+<h3 id="camera">La caméra ne s'ouvre pas?</h3>
+<p>Dans les réglages de ton iPhone, à la page de Cap Forme, active la caméra. Pour un code-barres, tu peux aussi taper les chiffres à la main.</p>
+
+<h3 id="rappels">Mes rappels ne sonnent pas?</h3>
+<p>Dans les réglages de ton iPhone, va à Notifications&nbsp;› Cap Forme et autorise les notifications. Vérifie aussi le mode Concentration. Dans l'app, tes rappels sont dans Réglages&nbsp;› Rappels.</p>
+
+<h3 id="plantage">L'app plante?</h3>
+<p>Sur l'écran d'erreur, touche «&nbsp;Envoyer le détail&nbsp;», choisis Courriel et envoie-le à <a href="mailto:ludo5678x@gmail.com">ludo5678x@gmail.com</a>. Ce rapport contient seulement des détails techniques&nbsp;: version de l'app, écran, heure et message d'erreur. Dis-nous aussi ce que tu faisais juste avant.</p>
+
+<h3 id="avis-medical">Est-ce un avis médical?</h3>
+<p>Non. Cap Forme donne des repères généraux d'entraînement et de nutrition. Pour une question de santé, parles-en à ton médecin ou à ton pharmacien, ou appelle Info-Santé au 811. En cas d'urgence, compose le 911.</p>
+</section>
+
+<section id="aide" class="card urgent">
+<h2>Besoin d'aide maintenant?</h2>
+<p>Ces services ne font pas partie de Cap Forme.</p>
+<ul class="help">
+  <li><strong>Urgence&nbsp;:</strong> <a href="tel:911">911</a>, si ta sécurité ou celle de quelqu'un est menacée maintenant.</li>
+  <li><strong>Crise de suicide, partout au Canada&nbsp;:</strong> appelle ou texte le <a href="tel:988">9-8-8</a>.</li>
+  <li><strong>Prévention du suicide au Québec&nbsp;:</strong> 1&nbsp;866&nbsp;APPELLE, soit le <a href="tel:+18662773553">1&nbsp;866&nbsp;277-3553</a>, ou texte le <a href="sms:535353">535353</a>. Clavardage sur <a href="https://suicide.ca/fr">suicide.ca</a>.</li>
+  <li><strong>Info-Santé et Info-Social&nbsp;:</strong> compose le <a href="tel:811">811</a> (option 1&nbsp;: santé; option 2&nbsp;: psychosocial).</li>
+  <li><strong>Troubles alimentaires, ANEB&nbsp;:</strong> <a href="tel:+18006300907">1&nbsp;800&nbsp;630-0907</a>, par appel ou par texto. Site&nbsp;: <a href="https://anebquebec.com/">anebquebec.com</a>.</li>
+  <li><strong>Jeunes&nbsp;:</strong> Tel-jeunes, <a href="tel:+18002632266">1&nbsp;800&nbsp;263-2266</a>, texto <a href="sms:+18668114811">1&nbsp;866&nbsp;811-4811</a>. Jeunesse, J'écoute, <a href="tel:+18006686868">1&nbsp;800&nbsp;668-6868</a>, ou texte PARLER au <a href="sms:686868">686868</a>.</li>
+  <li><strong>Centre antipoison du Québec&nbsp;:</strong> <a href="tel:+18004635060">1&nbsp;800&nbsp;463-5060</a>.</li>
+</ul>
+<p class="meta">Numéros vérifiés le 13&nbsp;novembre 2026 sur les sites officiels. Dans l'app&nbsp;: Réglages&nbsp;› Aide et ressources.</p>
+</section>
+
+<section id="confidentialite-en-bref">
+<h2>Ta vie privée</h2>
+<p>Pas de compte, pas de pub, aucun outil d'analyse. Tout ce que l'app fait de tes données est expliqué dans la <a href="confidentialite.html#confidentialite">politique de confidentialité</a>. Tes droits et tes choix (copie, effacement, permissions)&nbsp;: <a href="confidentialite.html#tes-choix">Tes droits et tes choix</a>.</p>
+</section>
+</main>
+
+<footer class="site-footer">
+  <p>Cap Forme est publiée par Ludovic Lafontaine (Octane), au Québec. Nous joindre&nbsp;: <a href="mailto:ludo5678x@gmail.com">ludo5678x@gmail.com</a> · <a href="confidentialite.html#confidentialite">Politique de confidentialité</a></p>
+</footer>
+</div>
+</body>
+</html>

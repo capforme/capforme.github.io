@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
+<title>Cap Forme</title>
+<meta name="description" content="Cap Forme, une app d'entraînement et de nutrition faite au Québec : politique de confidentialité et soutien.">
+<link rel="icon" href="data:,">
+<style>
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff;
+  --fg: #16181b;
+  --muted: #555b62;
+  --line: #e2e5e9;
+  --card: #f3f5f0;
+  --accent: #2c6500;
+  --accent-strong: #1f4a00;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b0d10;
+    --fg: #e9ebee;
+    --muted: #a9afb6;
+    --line: #262a31;
+    --card: #14181c;
+    --accent: #c5f23a;
+    --accent-strong: #dcf88a;
+  }
+}
+*, *::before, *::after { box-sizing: border-box; }
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 106.25%;
+  line-height: 1.55;
+}
+@supports (font: -apple-system-body) {
+  html { font: -apple-system-body; line-height: 1.55; }
+}
+body { margin: 0; background: var(--bg); color: var(--fg); overflow-wrap: break-word; }
+.wrap {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 1.25rem max(1rem, env(safe-area-inset-right)) 3rem max(1rem, env(safe-area-inset-left));
+}
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--line);
+}
+.brand { font-weight: 700; font-size: 1.1rem; color: var(--fg); text-decoration: none; }
+.site-nav a { margin-right: 1rem; }
+.site-nav a:last-child { margin-right: 0; }
+.site-nav .current { color: var(--fg); text-decoration: none; font-weight: 600; }
+h1 { font-size: 1.75rem; line-height: 1.2; margin: 1.5rem 0 0.25rem; }
+h2 { font-size: 1.3rem; line-height: 1.25; margin: 2.25rem 0 0.5rem; }
+h3 { font-size: 1.05rem; line-height: 1.3; margin: 1.5rem 0 0.25rem; }
+main, section, h2, h3 { scroll-margin-top: 1rem; }
+p, ul, ol { margin: 0.6rem 0; }
+ul, ol { padding-left: 1.25rem; }
+li { margin: 0.35rem 0; }
+a { color: var(--accent); text-underline-offset: 0.15em; }
+a:hover { color: var(--accent-strong); }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+.meta { color: var(--muted); margin-top: 0; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 0.75rem 1rem; margin: 1rem 0; }
+.card p:first-child, .card h2:first-child { margin-top: 0; }
+.urgent { border-left: 4px solid var(--accent); }
+.help li { margin: 0.6rem 0; }
+.site-footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.95rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="site-header">
+  <a class="brand" href="index.html">Cap Forme</a>
+  <nav class="site-nav" aria-label="Pages du site">
+    <a href="confidentialite.html">Confidentialité</a>
+    <a href="soutien.html">Soutien</a>
+  </nav>
+</header>
+
+<main id="accueil">
+<h1>Cap Forme</h1>
+<p class="meta">Une app d'entraînement et de nutrition faite au Québec.</p>
+<ul>
+  <li><a href="confidentialite.html#confidentialite">Politique de confidentialité</a></li>
+  <li><a href="soutien.html#soutien">Soutien</a></li>
+</ul>
+</main>
+
+<footer class="site-footer">
+  <p>Cap Forme est publiée par Ludovic Lafontaine (Octane), au Québec. Nous joindre&nbsp;: <a href="mailto:ludo5678x@gmail.com">ludo5678x@gmail.com</a></p>
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
+<title>Politique de confidentialité · Cap Forme</title>
+<meta name="description" content="Ce que l'app Cap Forme fait de tes données : ce qui reste sur ton téléphone, ce qui en sort et comment tout effacer.">
+<link rel="icon" href="data:,">
+<style>
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff;
+  --fg: #16181b;
+  --muted: #555b62;
+  --line: #e2e5e9;
+  --card: #f3f5f0;
+  --accent: #2c6500;
+  --accent-strong: #1f4a00;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b0d10;
+    --fg: #e9ebee;
+    --muted: #a9afb6;
+    --line: #262a31;
+    --card: #14181c;
+    --accent: #c5f23a;
+    --accent-strong: #dcf88a;
+  }
+}
+*, *::before, *::after { box-sizing: border-box; }
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 106.25%;
+  line-height: 1.55;
+}
+@supports (font: -apple-system-body) {
+  html { font: -apple-system-body; line-height: 1.55; }
+}
+body { margin: 0; background: var(--bg); color: var(--fg); overflow-wrap: break-word; }
+.wrap {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 1.25rem max(1rem, env(safe-area-inset-right)) 3rem max(1rem, env(safe-area-inset-left));
+}
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--line);
+}
+.brand { font-weight: 700; font-size: 1.1rem; color: var(--fg); text-decoration: none; }
+.site-nav a { margin-right: 1rem; }
+.site-nav a:last-child { margin-right: 0; }
+.site-nav .current { color: var(--fg); text-decoration: none; font-weight: 600; }
+h1 { font-size: 1.75rem; line-height: 1.2; margin: 1.5rem 0 0.25rem; }
+h2 { font-size: 1.3rem; line-height: 1.25; margin: 2.25rem 0 0.5rem; }
+main, section, h2, h3 { scroll-margin-top: 1rem; }
+p, ul, ol { margin: 0.6rem 0; }
+ul, ol { padding-left: 1.25rem; }
+li { margin: 0.35rem 0; }
+a { color: var(--accent); text-underline-offset: 0.15em; }
+a:hover { color: var(--accent-strong); }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+.meta { color: var(--muted); margin-top: 0; }
+.toc { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 0.75rem 1rem; margin: 1.25rem 0; }
+.toc h2 { font-size: 1rem; margin: 0 0 0.25rem; }
+.toc ol { margin: 0; }
+.site-footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.95rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="site-header">
+  <a class="brand" href="confidentialite.html">Cap Forme</a>
+  <nav class="site-nav" aria-label="Pages du site">
+    <a href="confidentialite.html" aria-current="page" class="current">Confidentialité</a>
+    <a href="soutien.html">Soutien</a>
+  </nav>
+</header>
+
+<main id="confidentialite">
+<h1>Politique de confidentialité de Cap Forme</h1>
+<p class="meta">En vigueur le 16 novembre 2026</p>
+
+<p>Cap Forme est une app d'entraînement et de nutrition. Cette politique t'explique en mots simples quelles données l'app utilise, ce qui sort de ton téléphone et comment tout effacer. Elle vaut pour l'app Cap Forme sur iPhone et pour ce site.</p>
+
+<nav class="toc" aria-labelledby="sommaire">
+  <h2 id="sommaire">Sommaire</h2>
+  <ol>
+    <li><a href="#en-bref">En bref</a></li>
+    <li><a href="#qui-on-est">Qui on est</a></li>
+    <li><a href="#sur-ton-telephone">Ce qui reste sur ton téléphone</a></li>
+    <li><a href="#ce-qui-sort">Ce qui sort de ton téléphone</a></li>
+    <li><a href="#nous-ecrire">Si tu nous écris</a></li>
+    <li><a href="#tes-choix">Tes droits et tes choix</a></li>
+    <li><a href="#age">Âge</a></li>
+    <li><a href="#securite">Sécurité</a></li>
+    <li><a href="#gouvernance">Nos règles internes (gouvernance)</a></li>
+    <li><a href="#changements">Changements</a></li>
+  </ol>
+</nav>
+
+<section id="en-bref">
+<h2>1. En bref</h2>
+<ul>
+  <li><strong>Pas de compte, pas de serveur Cap Forme.</strong> Ce que tu notes dans l'app est gardé sur ton téléphone. On ne le voit pas.</li>
+  <li><strong>Ce qui sort, seulement quand tu le demandes&nbsp;:</strong> un code-barres ou les mots d'une recherche en ligne, envoyés à Open Food Facts, une base d'aliments ouverte. Elle voit aussi l'adresse IP de ton téléphone.</li>
+  <li><strong>Ce que tu partages toi-même</strong> (une sauvegarde, par exemple) va seulement où tu le choisis.</li>
+  <li><strong>Pas de pub.</strong> Aucun partenaire de pub ou d'analyse, ni SDK tiers, ne reçoit tes données. On ne vend pas tes données.</li>
+  <li><strong>Tu décides.</strong> Fais une sauvegarde ou efface tes données, en tout temps&nbsp;: Réglages&nbsp;› Mes données.</li>
+  <li>Le coach IA n'est pas dans cette version&nbsp;: rien n'est envoyé à une IA. Avant qu'il arrive, cette politique sera mise à jour et l'app te demandera ton accord avant tout envoi.</li>
+</ul>
+</section>
+
+<section id="qui-on-est">
+<h2>2. Qui on est</h2>
+<p>Cap Forme est publiée par Ludovic Lafontaine (Octane), au Québec.</p>
+<p>Chez Octane, la personne responsable de la protection des renseignements personnels veille au respect de cette politique. Écris-lui pour toute question, demande ou plainte&nbsp;:</p>
+<ul>
+  <li>Titre&nbsp;: Responsable de la protection des renseignements personnels</li>
+  <li>Courriel&nbsp;: <a href="mailto:ludo5678x@gmail.com">ludo5678x@gmail.com</a></li>
+</ul>
+</section>
+
+<section id="sur-ton-telephone">
+<h2>3. Ce qui reste sur ton téléphone</h2>
+<p>Ce que tu notes dans Cap Forme est gardé dans l'app, sur ton téléphone&nbsp;:</p>
+<ul>
+  <li><strong>ton profil&nbsp;:</strong> prénom (facultatif), sexe, année de naissance, taille, niveau d'activité, expérience, objectif et rythme, % de gras estimé, objectif physique, équipement, budget et, si tu y réponds, ta réponse à la question sur les hormones (adultes seulement);</li>
+  <li><strong>ton suivi&nbsp;:</strong> repas et aliments, eau, pas, sommeil, séances et séries, mesures (poids, tour de taille…), photos de progrès, rappels, épicerie, garde-manger et reçus;</li>
+  <li><strong>tes réponses à «&nbsp;Ta santé&nbsp;»</strong> (facultatives)&nbsp;: grossesse ou allaitement, trouble alimentaire, diabète, cœur, reins, médicament pour le poids, malaise à l'effort, blessure.</li>
+</ul>
+<p>Plusieurs de ces données touchent ta santé&nbsp;: ce sont des renseignements sensibles. Elles servent seulement à faire marcher l'app pour toi&nbsp;: tes cibles, tes progrès, tes séances, ta liste d'épicerie. Les calculs se font sur ton téléphone, et le coach te répond avec ces données, sur ton téléphone aussi.</p>
+<p><strong>Rien ne vient chez nous.</strong> Sans compte ni serveur, on ne reçoit pas ces données et on ne peut pas les voir, sauf ce que tu choisis de nous envoyer (<a href="#nous-ecrire">section 5</a>).</p>
+<p><strong>Caméra et photos.</strong> La caméra sert à scanner les codes-barres et à prendre tes photos de progrès. Pour un code-barres, l'image est lue sur ton téléphone&nbsp;: seul le code sert. Tes photos de progrès restent dans l'app; elles ne vont pas dans ta photothèque. Si tu importes une photo, l'app ouvre seulement celle que tu choisis&nbsp;: elle lit sa date et en garde une copie, sans sa position GPS. L'app ne demande ni ta position, ni tes contacts, ni ton micro.</p>
+<p><strong>Fichiers.</strong> Quand tu restaures une sauvegarde ou que tu importes des pesées, l'app lit le fichier que tu choisis, sur ton téléphone. Rien n'est envoyé.</p>
+<p><strong>Rappels.</strong> Ce sont des notifications locales, programmées sur ton téléphone. Aucun serveur de notifications ne reçoit tes données.</p>
+<p><strong>Sauvegarde iCloud de ton iPhone.</strong> Si elle est activée, iOS y copie les données de tes apps, dont Cap Forme. Cette copie est gérée par Apple, dans ton compte iCloud. On n'y a pas accès.</p>
+<p><strong>Combien de temps.</strong> Tes données restent sur ton téléphone jusqu'à ce que tu les effaces (<a href="#tes-choix">section 6</a>) ou que tu supprimes l'app.</p>
+</section>
+
+<section id="ce-qui-sort">
+<h2>4. Ce qui sort de ton téléphone</h2>
+<p><strong>Open Food Facts.</strong> L'app l'interroge seulement quand tu&nbsp;:</p>
+<ul>
+  <li>scannes ou tapes un code-barres, ou choisis un produit dans les résultats d'une recherche en ligne&nbsp;: elle envoie le code-barres;</li>
+  <li>touches le bouton pour chercher en ligne&nbsp;: elle envoie les mots que tu as tapés. Rien ne part pendant que tu tapes.</li>
+</ul>
+<p>La demande part directement de ton téléphone. Comme pour toute connexion Internet, Open Food Facts voit l'adresse IP de ton téléphone. La photo d'un produit vient aussi de ses serveurs. La demande nomme aussi l'app&nbsp;: son nom, sa version et notre courriel de contact, comme Open Food Facts le demande. Elle ne dit rien sur toi&nbsp;: ni ton nom, ni ton profil, ni ton journal.</p>
+<p>Open Food Facts est une base de données ouverte, gérée par une association indépendante en France. Elle reçoit seulement le code-barres ou les mots cherchés, avec l'adresse IP de ton téléphone. Elle est soumise au RGPD, la loi européenne sur la protection des données&nbsp;: cette loi l'oblige à protéger ces données au moins autant que cette politique. Elle a aussi sa propre <a href="https://fr.openfoodfacts.org/privacy">politique de confidentialité</a>. Selon cette politique, ses journaux de visite, avec l'adresse IP, sont gardés jusqu'à 3&nbsp;ans. On ne contrôle pas ce service.</p>
+<p><strong>Ce que tu partages toi-même.</strong> Une sauvegarde, ton «&nbsp;Résumé pour ton pro&nbsp;», ta liste d'épicerie, le résumé de ta journée ou d'une séance, un rapport de plantage&nbsp;: tout ça passe par la feuille de partage de ton iPhone. Ça va seulement où tu le choisis (Fichiers, Messages, Courriel…). Ça ne passe pas par nous.</p>
+<p><strong>Liens.</strong> Un lien (ressource d'aide, fiche d'un produit, source d'un calcul) s'ouvre dans ton navigateur, comme Safari. Un numéro d'aide s'ouvre dans Téléphone ou Messages. Ces sites et ces services ont leurs propres règles.</p>
+<p><strong>Apple.</strong> Apple distribue l'app et a sa propre politique de confidentialité. Elle nous montre des statistiques globales, sans ton identité, comme le nombre de téléchargements. Si tu as accepté, dans les réglages de ton iPhone, de partager tes données d'analyse avec les développeurs, elle nous montre aussi des chiffres d'utilisation et de plantages.</p>
+<p><strong>Ni pub, ni analyse.</strong> Aucun partenaire de pub ou d'analyse, ni SDK tiers, ne reçoit tes données. On ne vend pas tes données et on ne te piste pas.</p>
+<p><strong>Ce site.</strong> On n'ajoute à ces pages aucun témoin (cookie) ni outil d'analyse. L'hébergeur du site a ses propres règles&nbsp;: comme pour tout site Web, il peut noter l'adresse IP des visiteurs, pour sa sécurité.</p>
+</section>
+
+<section id="nous-ecrire">
+<h2>5. Si tu nous écris</h2>
+<p>Tu peux nous écrire à <a href="mailto:ludo5678x@gmail.com">ludo5678x@gmail.com</a> (dans l'app&nbsp;: Réglages&nbsp;› À propos&nbsp;› Nous joindre).</p>
+<ul>
+  <li><strong>Ce qu'on reçoit&nbsp;:</strong> ton adresse courriel, ton nom s'il paraît dans ton courriel, ton message et ce que tu y joins. Un rapport de plantage contient seulement des détails techniques&nbsp;: version de l'app, écran, heure et message d'erreur.</li>
+  <li><strong>Pourquoi&nbsp;:</strong> te répondre, régler le problème et améliorer l'app. Jamais pour de la pub.</li>
+  <li><strong>Qui le lit&nbsp;:</strong> seulement la personne responsable de la protection des renseignements personnels, qui s'occupe aussi du soutien.</li>
+  <li><strong>Où&nbsp;:</strong> dans la boîte courriel de l'app, chez notre fournisseur de courriel. Ses serveurs peuvent être à l'extérieur du Québec.</li>
+  <li><strong>Combien de temps&nbsp;:</strong> 12&nbsp;mois après notre dernière réponse. Ensuite, on l'efface.</li>
+</ul>
+<p>N'envoie pas ta sauvegarde ni de détails de santé dont on n'a pas besoin. Si tu nous envoies ta sauvegarde quand même, on l'efface dès que ton problème est réglé.</p>
+</section>
+
+<section id="tes-choix">
+<h2>6. Tes droits et tes choix</h2>
+<p>Dans l'app, en tout temps&nbsp;:</p>
+<ul>
+  <li><strong>Voir et corriger&nbsp;:</strong> tout ce que tu as noté se voit et se corrige dans l'app. Ton profil et «&nbsp;Ta santé&nbsp;»&nbsp;: Réglages&nbsp;› Profil.</li>
+  <li><strong>Obtenir une copie&nbsp;:</strong> Réglages&nbsp;› Mes données&nbsp;› Faire une sauvegarde. Tu obtiens un fichier JSON, un format ouvert et lisible.</li>
+  <li><strong>Tout effacer&nbsp;:</strong> Réglages&nbsp;› Mes données&nbsp;› Effacer toutes mes données. C'est définitif. Seuls des réglages de ton téléphone restent (thème, sons et vibrations, Mon équipement, écran allumé…). Pour tout retirer, supprime l'app&nbsp;: ça efface ce qu'elle garde sur ton téléphone.</li>
+  <li><strong>Tes copies&nbsp;:</strong> une sauvegarde que tu as enregistrée, ou la sauvegarde iCloud de ton iPhone, reste où elle est. Efface-la toi-même au besoin.</li>
+  <li><strong>Permissions&nbsp;:</strong> la caméra et les notifications se refusent ou se changent en tout temps dans les réglages de ton iPhone, à la page de Cap Forme.</li>
+  <li><strong>Open Food Facts&nbsp;:</strong> pour que rien ne sorte, n'utilise ni le code-barres ni la recherche en ligne. Entre l'aliment à la main ou choisis-le dans les aliments de l'app.</li>
+</ul>
+<p>On ne peut ni voir, ni corriger, ni effacer tes données à ta place&nbsp;: on ne les a pas.</p>
+<p><strong>Ce qu'on garde nous-mêmes (tes courriels).</strong> Tu peux demander à les consulter, à en obtenir une copie, à les faire corriger ou à les faire effacer. Écris à <a href="mailto:ludo5678x@gmail.com">ludo5678x@gmail.com</a>. C'est gratuit, et on te répond par écrit dans les 30&nbsp;jours.</p>
+<p><strong>Plainte.</strong> Écris d'abord à la personne responsable, à <a href="mailto:ludo5678x@gmail.com">ludo5678x@gmail.com</a>. On confirme la réception, on examine ta plainte et on te répond par écrit dans les 30&nbsp;jours. Si la réponse ne te satisfait pas, tu peux t'adresser à la <a href="https://www.cai.gouv.qc.ca">Commission d'accès à l'information du Québec</a>. Après un refus d'accès ou de correction, ou sans réponse dans les 30&nbsp;jours, tu as 30&nbsp;jours pour lui écrire.</p>
+</section>
+
+<section id="age">
+<h2>7. Âge</h2>
+<p>Cap Forme est faite pour les 13&nbsp;ans et plus. L'app le vérifie d'après ton année de naissance seulement, pas ta date exacte.</p>
+<p>Avant 18&nbsp;ans, l'app est plus prudente. Par exemple, tes photos de progrès ne vont jamais d'office dans une sauvegarde.</p>
+<p>Tu as moins de 14&nbsp;ans? Pour nous écrire, fais-le avec un parent.</p>
+</section>
+
+<section id="securite">
+<h2>8. Sécurité</h2>
+<ul>
+  <li>Tes données sont dans l'espace de l'app, sur ton téléphone. Verrouille ton iPhone avec un code&nbsp;: c'est la meilleure protection pour tes données.</li>
+  <li>Les échanges avec Open Food Facts sont chiffrés (HTTPS).</li>
+  <li><strong>Le fichier de sauvegarde n'est pas chiffré.</strong> Une personne qui l'ouvre peut lire ce qu'il contient, dont des données de santé. Garde-le dans un endroit sûr et efface les vieilles copies.</li>
+  <li><strong>Photos de progrès dans la sauvegarde&nbsp;:</strong> pour un adulte, elles sont incluses par défaut, en plus petit. Pour les retirer, désactive «&nbsp;Inclure mes photos de progrès&nbsp;» (Réglages&nbsp;› Mes données). Le bouton «&nbsp;Faire la sauvegarde complète&nbsp;» les inclut toujours.</li>
+  <li>Tes réponses à «&nbsp;Ta santé&nbsp;» ne sont jamais dans la sauvegarde. Sur un nouveau téléphone, réponds-y de nouveau.</li>
+  <li>Si un incident touche des renseignements qu'on garde (tes courriels), on agit vite pour limiter les risques. S'il y a un risque de préjudice sérieux, on avise les personnes touchées et la Commission d'accès à l'information.</li>
+</ul>
+</section>
+
+<section id="gouvernance">
+<h2>9. Nos règles internes (gouvernance)</h2>
+<ul>
+  <li><strong>Rôles&nbsp;:</strong> la personne responsable de la protection des renseignements personnels s'occupe de tout&nbsp;: soutien, demandes, plaintes et incidents. Elle seule lit les courriels.</li>
+  <li><strong>Fournisseurs&nbsp;:</strong> notre fournisseur de courriel garde la boîte courriel de l'app. Apple distribue l'app. Un hébergeur publie ce site.</li>
+  <li><strong>Conservation&nbsp;:</strong> tes courriels sont gardés 12&nbsp;mois après notre dernière réponse. Une sauvegarde reçue est effacée dès que ton problème est réglé.</li>
+  <li><strong>Destruction&nbsp;:</strong> à la fin de ce délai, on efface le courriel pour de bon, avec ses pièces jointes, corbeille comprise.</li>
+  <li><strong>Plaintes&nbsp;:</strong> accusé de réception, examen, puis réponse écrite dans les 30&nbsp;jours. Ensuite, recours possible à la Commission d'accès à l'information.</li>
+  <li><strong>Incidents&nbsp;:</strong> chaque incident est inscrit dans un registre, gardé au moins 5&nbsp;ans.</li>
+  <li><strong>Révision&nbsp;:</strong> on revoit ces règles au moins une fois par année, et avant tout changement qui touche tes données.</li>
+</ul>
+</section>
+
+<section id="changements">
+<h2>10. Changements</h2>
+<p>La date d'entrée en vigueur est en haut de cette page. Avant un changement important (par exemple, si l'app envoyait d'autres données hors de ton téléphone), on met cette politique à jour et on publie un avis sur cette page. L'app te prévient aussi avant que ça s'applique.</p>
+</section>
+</main>
+
+<footer class="site-footer">
+  <p>Cap Forme est publiée par Ludovic Lafontaine (Octane), au Québec. Questions&nbsp;: <a href="mailto:ludo5678x@gmail.com">ludo5678x@gmail.com</a> · <a href="soutien.html#soutien">Page de soutien</a></p>
+</footer>
+</div>
+</body>
+</html>
